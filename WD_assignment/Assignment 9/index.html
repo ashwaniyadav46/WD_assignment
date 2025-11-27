@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Background and Link Styles</title>
+<style>
+body {
+/* background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/)
++rAscLknwYv+Lx52ltp6kv3/3yWpvsoTVX/QIzqpmL2EfkEbgf5mvuj+hH0K6PiOb1cOOS927X3VfvonD
+HrklGvAfJn+FreAyyf9R3/b9yvO9aUsUcfsm/CVaoRq9Ij');
+background-repeat: no-repeat; */
+background-size: cover;
+background-attachment: fixed;
+font-family: 'Segoe UI', sans-serif;
+color: #222;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+h1 {
+background-color: rgba(0, 0, 0, 0.6);
+color: white;
+padding: 20px;
+border-radius: 10px;
+margin-top: 40px;
+display: inline-block;
+}
+
+.pattern-box {
+width: 300px;
+height: 200px;
+margin: 40px auto;
+border: 2px solid black;
+background-image: url('https://media.tenor.com/_zWYqfZdneIAAAAM/shocked-face-shockedmeme.gif');
+background-repeat: repeat;
+background-size: 100px 100px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+background-color: lightyellow;
+color: rgb(0, 0, 0);
+}
+a {
+font-size: 20px;
+text-decoration: none;
+padding: 8px 16px;
+border-radius: 6px;
+transition: all 0.3s ease;
+}
+a:link {
+color: blue;
+background-color: white;
+border: 1px solid blue;
+}
+a:visited {
+color: purple;
+background-color: #f3e5f5;
+border: 1px solid purple;
+}
+a:hover {
+color: white;
+background-color: blue;
+transform: scale(1.1);
+}
+a:active {
+color: white;
+background-color: darkred;
+transform: scale(0.95);
+}
+</style>
+</head>
+<body>
+<h1>CSS: Background & Link Styling</h1>
+<div class="pattern-box">
+<p style="padding-top: 70px;">This box has a repeating background pattern.</p>
+</div>
+<p>Here are some styled links:</p>
+<a href="https://www.google.com" target="_blank">Visit Google</a>
+<a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia</a>
+</body>
+</html>
+

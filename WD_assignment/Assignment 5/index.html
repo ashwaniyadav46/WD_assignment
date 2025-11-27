@@ -1,0 +1,122 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Registration - The Book Loft</title>
+<link rel="icon" type="image/x-icon" href="download.ico">
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #fff3e6;
+background-image: url("reg_background.webp");
+margin: 0;
+padding: 0;
+}
+.header {
+background-color: #f4a460;
+padding: 20px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+.header img {
+height: 60px;
+}
+
+.navbar {
+background-color: #ffe4c4;
+display: flex;
+justify-content: center;
+padding: 10px;
+gap: 40px;
+border-bottom: 1px solid #c8a27a;
+}
+.navbar a {
+text-decoration: none;
+font-size: 18px;
+color: black;
+font-weight: bold;
+}
+.container {
+width: 40%;
+margin: 40px auto;
+background: white;
+padding: 30px;
+border-radius: 8px;
+border: 1px solid #d6b18a;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2 {
+text-align: center;
+color: #a0522d;
+margin-bottom: 20px;
+}
+label {
+font-weight: bold;
+}
+input, select {
+width: 100%;
+padding: 10px;
+margin: 8px 0 20px 0;
+border: 1px solid #c7c7c7;
+border-radius: 4px;
+}
+button {
+width: 100%;
+padding: 12px;
+background-color: #f4a460;
+border: none;
+color: white;
+font-size: 18px;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover {
+background-color: #d88b3c;
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+<img src="bookstore.jpeg" alt="Book Loft Logo">
+<h1>The Book Loft</h1>
+</div>
+<!-- Navigation -->
+<div class="navbar">
+<a href="home.html">Home</a>
+<a href="login.html">Login</a>
+<a href="registration.html">Registration</a>
+<a href="catalogue.html">Catalogue</a>
+<a href="cart.html">Cart</a>
+</div>
+<!-- Registration Form -->
+<div class="container">
+<h2>Registration Form</h2>
+<form>
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name" required>
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+<label>Phone Number</label>
+<input type="text" placeholder="Enter phone number" required>
+<label>Password</label>
+<input type="password" placeholder="Create password" required>
+<label>Confirm Password</label>
+<input type="password" placeholder="Re-enter password" required>
+<label>Select Branch</label>
+<select required>
+<option value="">-- Choose Branch --</option>
+<option>CSE</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>CIVIL</option>
+</select>
+<button type="submit">Register</button>
+</form>
+</div>
+</body>
+</html>
